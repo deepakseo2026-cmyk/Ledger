@@ -3,6 +3,7 @@ import React from "react";
 import { Grid, Typography, Button, Box } from "@mui/material";
 import { Stack } from "@mui/material";
 import { useRouter } from "next/navigation";
+import LogoLedger from '../../public/ledger.svg'
 
 export default function HomeMainPage() {
     const router = useRouter()
@@ -25,7 +26,7 @@ export default function HomeMainPage() {
                 <Stack mt={2}>
                     <Box
                         component="img"
-                        src="https://lhgfrrd0-juygf-hffd11.s3.eu-north-1.amazonaws.com/assets/image/mfkNbEskGSwj.svg"
+                        src="/ledger.svg" // ✅ SVG from public folder
                         alt="Ledger Logo"
                         sx={{
                             width: 120,
@@ -109,7 +110,7 @@ export default function HomeMainPage() {
             >
                 <Box
                     component="video"
-                    src="https://lhgfrrd0-juygf-hffd11.s3.eu-north-1.amazonaws.com/assets/media/video.mp4"
+                    src="/videos/intro.mp4" // ✅ your local video path
                     autoPlay
                     loop
                     muted
@@ -120,6 +121,7 @@ export default function HomeMainPage() {
                         objectFit: "cover",
                     }}
                 />
+
             </Grid>
         </Grid>
     );
