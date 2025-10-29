@@ -121,7 +121,6 @@ export default function HomeMainPage() {
                         objectFit: "cover",
                     }}
                 />
-
             </Grid>
         </Grid>
     );
