@@ -65,7 +65,7 @@ export default function DeviceMain() {
                         </Button>
                         <Box
                             component="img"
-                            src="https://lhgfrrd0-juygf-hffd11.s3.eu-north-1.amazonaws.com/assets/image/mfkNbEskGSwj.svg"
+                            src="/ledger2.svg"
                             alt="Ledger Logo"
                             sx={{
                                 width: 90,
