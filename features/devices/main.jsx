@@ -12,7 +12,7 @@ const devices = [
     },
     {
         name: 'Ledger Flex',
-        image: 'https://lhgfrrd0-juygf-hffd11.s3.eu-north-1.amazonaws.com/assets/image/flex_3x.webp',
+        image: '/flex_3x.png',
         filter: false,
         size: { xs: 6, md: 4, lg: 2.66 }
     },
